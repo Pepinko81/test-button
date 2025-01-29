@@ -1,18 +1,83 @@
-.dark-theme {
-    background-color: #1a1a1a;
+<div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div><div class="theme-switch">
+  <input type="checkbox" id="theme-toggle" data-toggle="toggle" data-on="Light" data-off="Dark" data-size="small">
+</div>[data-theme="dark"] {
+  --primary-bg: #1a1a1a;
+  --secondary-bg: #2d2d2d;
+  --text-color: #ffffff;
+  --card-bg: #363636;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--card-bg);
+}
+
+[data-theme="dark"] .navbar {
+  background-color: var(--secondary-bg);
+}
+
+[data-theme="dark"] .main-sidebar {
+  background-color: var(--secondary-bg);
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #121212;
     color: #ffffff;
+}
+
+.dark-theme .navbar {
+    background-color: #1f1f1f;
+    border-color: #333;
+}
+
+.dark-theme .sidebar-wrapper {
+    background-color: #1f1f1f;
+}
+
+.dark-theme .page-wrapper {
+    background-color: #121212;
 }
 
 .dark-theme .card {
-    background-color: #2d2d2d;
-    border-color: #404040;
+    background-color: #1f1f1f;
+    border-color: #333;
+}
+
+.dark-theme .btn {
+    background-color: #333;
+    border-color: #444;
+    color: #fff;
 }
 
 .dark-theme .table {
-    color: #ffffff;
-    background-color: #2d2d2d;
+    color: #fff;
 }
 
 .dark-theme .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #333333;
+    background-color: #1f1f1f;
+}
+
+.dark-theme .table-hover tbody tr:hover {
+    background-color: #333;
 }

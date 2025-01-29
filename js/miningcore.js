@@ -11,7 +11,40 @@
 // --------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------
 
+// Add this at the top of the file
+const themeToggle = document.getElementById('theme-toggle');
+const darkTheme = 'css/dark-theme.css';
+const theme = localStorage.getItem('theme');
 
+// Function to enable dark theme
+function enableDarkTheme() {
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark');
+    themeToggle.textContent = 'Toggle Light Mode';
+}
+
+// Function to disable dark theme
+function disableDarkTheme() {
+    document.body.classList.remove('dark-theme');
+    localStorage.setItem('theme', 'light');
+    themeToggle.textContent = 'Toggle Dark Mode';
+}
+
+// Check if dark theme is enabled
+if (theme === 'dark') {
+    enableDarkTheme();
+} else {
+    disableDarkTheme();
+}
+
+// Add event listener to toggle button
+themeToggle.addEventListener('click', () => {
+    if (document.body.classList.contains('dark-theme')) {
+        disableDarkTheme();
+    } else {
+        enableDarkTheme();
+    }
+});
 
 
 
